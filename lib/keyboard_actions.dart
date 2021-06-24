@@ -366,7 +366,7 @@ class KeyboardActionstate extends State<KeyboardActions>
     // Update state if changed
     if (_offset != newOffset) {
       setState(() {
-        _offset = newOffset;
+        _offset = 0; // change offset back to 0 to avoid extra padding since we have fixed button at the bottom
       });
     }
   }
